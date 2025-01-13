@@ -1,0 +1,13 @@
+<div class="d-flex align-items-center mb-2">
+    <img 
+        [src]="this.url"
+        [alt]="this.title"
+        style="width: 110px; height: auto; object-fit: cover; border-radius: 8px;"
+    >
+    <a 
+        [href]="this.url"
+        target="_blank" 
+        class="mx-3"
+        >{{title || 'Untitled'}}
+    </a>
+</div>

@@ -1,0 +1,24 @@
+<div class="p-2" style="border-style: dashed; border-color: #dbdbdb;">
+
+    <div class="d-flex">
+        <h3 class="d-inline-block flex-grow-1">Trending</h3>
+        <button 
+            type="button" 
+            style="border: none; background: none; padding: 0; cursor: pointer;"
+            (click)="nextTrending()"
+            ><img src="https://cdn-icons-png.flaticon.com/512/2722/2722998.png" height="40px" width="40px">
+        </button>
+    </div>
+    
+    <div class="row">
+        @for (gif of trendingGifs; track $index) {
+            <div class="col-12"> 
+                <gifs-card-small 
+                        [url]="gif.images.downsized_medium.url"
+                        [title]="gif.title" 
+                ></gifs-card-small>
+            </div>
+        }
+    </div>
+
+</div>

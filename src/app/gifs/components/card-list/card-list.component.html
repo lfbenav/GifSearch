@@ -1,0 +1,13 @@
+<div class="row">
+    @if (gifs.length === 0) {
+        <span>Aquí se mostrarán los resultados...</span>
+    }
+    @for (gif of gifs; track $index) {
+        <div class="col-md-3 col-sm-6 col-12"> 
+            <gifs-card 
+                    [url]="gif.images.downsized_medium.url"
+                    [title]="gif.title" 
+            ></gifs-card>
+        </div>
+    }
+</div>

@@ -1,0 +1,24 @@
+<div class="p-2" style="border-style: dashed; border-color: #dbdbdb;">
+
+    <div class="d-flex">
+        <h3 class="d-inline-block flex-grow-1">Random</h3>
+        <button 
+            type="button" 
+            style="border: none; background: none; padding: 0; cursor: pointer;"
+            (click)="nextRandom()"
+            ><img src="https://cdn-icons-png.flaticon.com/512/2989/2989898.png" height="35px" width="35px">
+        </button>
+    </div>
+    
+    <div class="row">
+        @if (randomGif) {
+            <div class="col-12"> 
+                <gifs-card-small 
+                        [url]="randomGif.images.downsized_medium.url"
+                        [title]="randomGif.title" 
+                ></gifs-card-small>
+            </div>
+        }
+    </div>
+
+</div>

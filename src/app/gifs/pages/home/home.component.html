@@ -1,0 +1,13 @@
+<div class="row p-3">
+    <div class="col-12">
+        <gifs-search-box></gifs-search-box>
+    </div>
+    <div class="col-12 col-xl-9">
+        <gifs-card-list [gifs]="gifs"></gifs-card-list>
+    </div>
+    <div class="col-12 col-xl-3 d-flex flex-column gap-2">
+        <gifs-trending-list [trendingGifs]="trendingGifs"></gifs-trending-list>
+        <gifs-random-list [randomGif]="randomGif"></gifs-random-list>
+    </div>
+</div>
+<!-- {{gifs | json}} -->
