@@ -1,7 +1,5 @@
 # Gif Search
 
-Luis Fernando Benavides Villegas
-
 ![Proyecto](./gifsApp.png)
 
 Ejecutar:
